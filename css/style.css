@@ -23,7 +23,10 @@ body {
  
 }
 
+
+/* Inicio de Atributos inniciales de las etiquetas */
 h1{
+    
 	font-size:3em;
     padding: 0px 5px;
 	padding-bottom: 80px;
@@ -54,7 +57,7 @@ p{
     color: gold;
 }
 
-
+/* Fin de atributos iniciales de las etiquetas */
 
 .titulos {
     /* Estilo de la fuente */
@@ -66,6 +69,7 @@ p{
 }
 
 .titulos:hover {
+    /* color */
     color: rgb(255 226 90);
 }
 
@@ -94,10 +98,12 @@ p{
 }
 
 a {
+    /* color */
 	color: rgb(248 204 0);
 }
 
 a:hover{
+    /* color */
 	color: rgb(255 226 90);
 }
 
@@ -109,25 +115,30 @@ a:hover{
 
 
 .container {
+    /* width y margin */
 	max-width: 1100px;
 	margin: auto;
 }
 
  img{
+    /* width y margin */
 	width: 75vw;
 	max-width: 1000px;
 	margin: auto;
 }
 
 header{
+    /* bordes de navbar */
     border-bottom: 1px solid white;
 }
 
 footer{
+    /* bordes de footernav */
     border-top: 1px solid white;
 }
 
 header .logo{
+    /* estilizacion del "logo" */
 	margin: 0;
 	padding: 10px 15px;
 	font-size: 3em;
@@ -137,6 +148,7 @@ header .logo{
 }
 
 header .container {
+    /* estilo contenedor de la navbar */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -145,6 +157,7 @@ header .container {
 }
 
 header .navbar {
+    /* estilo navbar */
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -161,12 +174,14 @@ header a{
 }
 
 #hero{
+    /* estilos del hero */
 	display:flex;
 	align-items:center;
 	justify-content: center;
 	text-align: center;
 	flex-direction: center;
 	height: 100vh;
+    /* fondo del hero */
 	background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -175,27 +190,32 @@ header a{
 }
 
 #hero img{
+    /* tamaño del img */
 	width: 50vw;
 	max-width: 1000px;
 	margin: auto;
 }
 
 #hero a{
+    /* margen */
 	margin-bottom: 20px;
 }
 
 #resumen {
+    /* estilos de la section */
 	text-align: center;
     background-color: rgb(248 248 248);
 }
 
 #resumen div {
+    /* padding del div */
 	padding-left: 1.2rem;
     padding-right: 1.2rem;
     padding-bottom: 1rem;
 }
 
 #resumen h3, p, img{
+    /* padding de las etiquetas */
     padding-top:1rem;
 }
  
@@ -209,14 +229,17 @@ header a{
 }
 
 #saga{
+    /* estilo */
 	text-align: center;
 }
 
 #saga div{
+    /* padding */
 	padding: 20px 20px;
 }
 
 #saga p{
+    /* color */
 	color: white;
 
 }
@@ -247,8 +270,10 @@ header a{
     /* Opacidad del contenedor */
     opacity: 0.5;
 
+    /* Margen */
     margin-bottom: 20px;
     
+    /* Borde */
     border-radius: 15px;
 }
 
@@ -304,19 +329,25 @@ header a{
 
 
 #container-tienda{
+    /*padding */
 	padding-top: 0px;
 }
 
 
 .titulos {
+    /* centrado */
     text-align: center;
 }
 
 #en-1977{
+    /* color del fondo */
     background-color: rgb(248 248 248);
 }
 
+
+
 #en-1977 .container p{
+    /* centrado y margen */
     text-align:center;
     margin-bottom: 20px;
 }
@@ -329,24 +360,29 @@ header a{
     justify-content: center;
 }
 
+
 video {
+    /* estilo del video */
     width: 75vw;
 	max-width: 1000px;
 	margin: auto;
 }
 
 #en-1977 div{
+    /* padding */
     padding-left: 1.2rem;
     padding-right: 1.2rem;
     padding-bottom: 1rem;
 }
 
 #en-1977 h3, p, img, video{
+    /* padding de las etiquetas */
     padding-top:1rem;
 }
 
 
 #formulario{
+    /* estilo del formulario */
     text-align: center;
     color:rgb(238, 238, 238);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../images/fondoform.jpg);
@@ -357,14 +393,17 @@ video {
 }
 
 #text-form h3{
+    /* color */
     color: white;
 }
 
 #text-form p{
+    /* color */
     color: white;
 }
 
 #formulario .lista{
+    /* estilos */
     list-style: none;
     color:rgb(238 238 238);
 }
@@ -375,6 +414,7 @@ video {
 }
 
 #formulario article{
+    /* padding */
     padding-left: 1.2rem;
     padding-right: 1.2rem;
     padding-bottom: 1rem;
@@ -393,6 +433,7 @@ video {
 }
 
 #formulario form fieldset{
+    /* padding */
     padding-left: 4px;
 }
 
@@ -402,15 +443,17 @@ video {
 }
 
 #formulario form legend {
+    /* centrado */
     text-align: center;
 }
 
 #formulario .contenidoform {
+    /* margen */
     margin-top: 10px;
 }
 
 
-
+/* inicio estilos del footer */
 footer .container {
     display: flex;
 	flex-direction: column;
@@ -445,8 +488,19 @@ footer .copyright{
     text-align: center;
     margin-bottom: 10px;
 }
+/* fin estilos del footer */
 
+.center {
+    /* estilo de la etiqueta "center" */
+    text-align: center;
+}
+
+
+
+/* Diseño para las pantallas de menos de 720px de ancho */
 @media (min-width: 720px){
+
+    /* estilos del header */
     header .container{
         flex-direction: row;
         justify-content: space-between;
@@ -461,6 +515,8 @@ footer .copyright{
     header a{
         font-size: 20px;
     }
+
+    /* estilos del footer */
 
     footer .container{
         display: grid;
@@ -479,7 +535,11 @@ footer .copyright{
 
 }
 
+
+/* Diseño para las pantallas de menos de 1200px de ancho */
 @media (min-width: 1200px){
+
+    /* estilos de la section resumen */
     #resumen .container article{
         display:grid;
         grid-template-columns: 50% 50%;   
@@ -512,20 +572,22 @@ footer .copyright{
         margin-bottom: 15px;
     }
 
+    /* estilos de la section saga */
     #saga .container .text article{
         display:grid;
+        /* divido en 3 columnas iguales con grid */
         grid-template-columns: 1fr 1fr 1fr;
         
     }
 
+    /* estilos de la section en-1977 */
     #en-1977 .container{
         display:grid;
+        /* divido en 3 columnas iguales con grid */
         grid-template-columns: 33% 33% 33%;
         gap: 40px;
 
     }
- 
-
 
     #en-1977 .container video{
         width: 350px;
@@ -537,10 +599,11 @@ footer .copyright{
         height: 490px;
     }
 
+    /* estilos de la section formulario */
     #formulario .container{
     display: grid;
+    /* divido en dos columnas iguales con grid */
     grid-template-columns: 50% 50%; 
- 
     padding: 20px;
     gap:40px;
  
