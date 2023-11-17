@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap');
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/Fondo.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: whitesmoke;
+    display: block;
+    font-weight: 400;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(228, 170, 25);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-top: 20px;
+    font-size: 75px;
+    line-height: 80px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 25px;
+    color: white;
+    padding: 0 100px;
+    margin-bottom: 25px;
+}
+
+.header-content p .mini-txt {
+    color:grey;
+}
+
+.gold {
+    color: goldenrod;
+}
+
+.btn-1 {
+    display: inline-block;
+    font-weight: bold;
+    padding: 11px 35px;
+    background-color: rgba(36, 36, 36, 0.651);
+    color: goldenrod;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: rgba(212, 212, 212, 0.397);
+}
+
+
+.btn-2 {
+    display: inline-block;
+    font-weight: bold;
+    padding: 11px 35px;
+    background-color: rgba(218, 165, 32, 0.548);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    
+    
+}
+
+.btn-2:hover {
+    background-color: goldenrod;
+}
+
+
+
+
+
+/* Comienzo con la primer section */
+
+
+.starwars {
+    padding: 50px 0;
+    position: relative;
+}
+
+.starwars-content {
+    text-align: center;
+
+}
+
+.starwars-content h2{
+
+    font-size: 55px;
+    line-height: 70px;
+    color:rgb(219, 157, 0);
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color:rgb(39, 39, 39);
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.starwars-group {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.starwars-1 {
+    padding: 25px;
+}
+
+.starwars img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+.starwars-img {
+    position: absolute;
+    top:0;
+    right:0;
+
+}
+
+.starwars-1 h3{
+
+    margin-bottom: 15px;
+}
+
+
+.georgelucas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url(../images/georgelucasbackground.png);
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.georgelucas-content {
+    text-align: end;
+    margin-right: 150px;
+}
+
+.georgelucas-content h2{
+    font-size: 55px;
+}
+
+.georgelucas-text p {
+    font-size: 30px;
+}
+
+.resumen {
+    display:flex;
+}
+
+.resumen-1 {
+    width: 50%;
+    padding: 75px 100px 100px 100px;
+    max-height: 100vh;
+    text-align: end;
+
+}
+
+.resumen-2 {
+    background-image: url(../images/anewhope1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    width: 50%;
+}
+
+.resumen-3 {
+    background-image: url(../images/anewhope2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    width: 50%;
+
+}
+
+.resumen-4 {
+    width: 50%;
+    padding: 75px 100px 100px 100px;
+    max-height: 100vh;
+
+}
+
+.resumen h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color:rgb(219, 157, 0);
+
+}
+
+.resumen p {
+    font-size: 15px;
+    color:rgb(39, 39, 39);
+    margin: 25px 0 45px 0;
+}
+
+.saga {
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.saga .saga-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+
+}
+
+
+.saga h2{
+    font-size: 55px;
+    line-height: 70px;
+    color:rgb(219, 157, 0);
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+
+
+.container-pelicula {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 15px 30px 15px 30px;
+    opacity: 0.5;
+    
+    /* Margen */
+    margin-bottom: 20px;
+    
+    /* Borde */
+    border-radius: 15px;
+
+    min-height: 15vw;
+}
+
+.container-pelicula:hover{
+    opacity: 1;
+}
+
+.pelicula {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* Margen */
+    margin: 10px 10px 10px 10px;
+
+    /* Estilo de la fuente */
+    text-align: center;
+
+    /* Overflow */
+    overflow: hidden; /* Hace que el contenido no salga de la caja */
+    overflow-wrap: break-word; /* Rompe palabras largas cuando no cabe en la caja */
+
+}
+
+.pelicula h4{
+    font-size: 23px;
+}
+
+.pelicula p {
+    font-size: 20px;
+}
+ 
+
+#sw1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/1sw.jpg)
+}
+
+#sw2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/2sw.jpg)
+}
+
+#sw3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/3sw.jpg)
+}
+
+#sw4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/4sw.jpg)
+}
+
+#sw5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/5sw.jpg)
+}
+
+#sw6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/6sw.jpg)
+}
+
+#sw7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/7sw.jpg)
+}
+
+#sw8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/8sw.jpg)
+}
+
+#sw9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(../images/9sw.jpg)
+}
+
+
+.pelis{
+	/* Estilos del fondo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../images/fondd.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.en1977 {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.en1977-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.en1977-1 {
+    padding: 15px 20px;
+
+}
+
+.en1977-1 video {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.en1977-1 img {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.en1977-1 h3 {
+    font-size: 25px;
+    color:rgb(32, 32, 32);
+    margin-bottom: 20px;
+}
+
+.en1977 h2{
+    font-size: 55px;
+    line-height: 70px;
+    color:rgb(219, 157, 0);
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.form {
+    padding: 50px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url(../images/fondoform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    
+
+}
+
+.lista {
+    color:grey;
+}
+
+.comentarios-content {
+    display: flex;
+    justify-content: space-between;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.comentarios-1 { 
+    padding-right: 80px;
+}
+
+
+.comentarios-1 img {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+
+.comentarios {
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.comentarios h2{
+    font-size: 55px;
+    line-height: 70px;
+    color:rgb(219, 157, 0);
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.comentarios-2 .formulario-content {
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+/* inicio estilos del footer */
+footer {
+    display: gid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+	align-items: center;
+	background-color: rgb(5,5,5);
+    
+}
+
+.footernav {
+    text-align: end;
+}
+
+
+footer a{
+    padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+footer p{
+    margin: 0;
+	padding: 10px 15px;
+    padding-bottom:15px;
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+}
+
+footer .copyright{
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* fin estilos del footer */
+
+
+@media(max-width:991px){
+    /* .menu {
+        padding: 30px;
+    } */
+    .menu label {
+        display:initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:rgb(32, 32, 32);
+        display: none;
+
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p{
+        padding: 0;
+    }
+
+ 
+
+    .starwars {
+        padding: 30px;
+    
+    }
+
+    .starwars-content h2 {
+        padding: 0;
+    }
+    
+    .txt-p {
+        padding: 0;
+    }
+
+    .starwars-group {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+ 
+    .georgelucas {
+        padding-left: 180px;
+
+    }
+
+    .georgelucas-content{
+        padding: 0;
+        margin-right: 30px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding:15px;
+    }
+    
+    .resumen {
+        flex-direction: column;
+
+    }
+
+    .resumen-1, .resumen-4 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .resumen-2, .resumen-3 {
+        display: none;
+    }
+
+    .saga {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .saga-content {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .saga h2{
+        padding: 0;
+    }
+
+    .en1977 {
+        padding: 30px;
+    }
+
+    .en1977 h2 {
+        padding: 0;
+    }
+
+    .en1977-content {
+        flex-direction: column;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .comentarios {
+        padding: 30px;
+    }
+
+    .comentarios h2 {
+        padding: 0;
+
+    }
+
+    .comentarios-content {
+        flex-direction: column;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+}
+
+
+
+
+
+.starwars {
+    padding: 30px;
+
+}
+
+.starwars-content h2 {
+    padding: 0;
+}
+
+.txt-p {
+    padding: 0;
+}
+
+.starwars-group {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE "TRAMA" */
+
+.header-content h2 {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+}
+
+.header-content .title-hero-2 {
+    font-size:150px;
+}
+
+.header-content .title-hero-1 {
+    font-size:100px;
+}
+
+
+
+
