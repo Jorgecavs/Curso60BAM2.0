@@ -12,10 +12,63 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(155, 155, 155), 214);
 }
 
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .alert {
+    background-color: #000; /* Fondo negro */
+    padding: 40px; /* Aumento del tamaño de relleno */
+    border-radius: 5px;
+    text-align: center;
+    color: #fff; /* Texto blanco */
+    font-size: 1.5em; /* Aumento del tamaño de la fuente */
+    z-index: 2;
+    border-radius: 40px;
+    
+  }
+  
+  /* Estilos para el botón Aceptar */
+  .alert button {
+    background-color: rgb(255, 255, 255); /* Fondo negro */
+    color: rgb(0, 0, 0); /* Texto blanco */
+    border: none;
+    padding: 15px; /* Aumento del tamaño del relleno */
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px; /* Espaciado entre el texto y el botón */
+    font-size: 0.8em; /* Aumento del tamaño de la fuente */
+    
+  }
+  
+  .alert button:hover {
+    background-color: goldenrod; /* Color dorado al pasar el mouse */
+  }
+
+
+
+.header-content h2 {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.gold-b {
+    color: rgba(218, 165, 32, 0.5);
+}
 
 .container {
     max-width: 1200px;
@@ -32,6 +85,8 @@ body {
     display: flex;
     align-items: center;
 }
+
+
 
 .menu {
     position: absolute;
@@ -143,14 +198,21 @@ body {
 
 
 .starwars {
-    padding: 50px 0;
+    padding: 0px 0;
     position: relative;
+    /* background-image: url(../images/FONDOSWB.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
 }
 
 .starwars-content {
     text-align: center;
 
 }
+
+
 
 .starwars-content h2{
 
@@ -160,23 +222,62 @@ body {
     text-transform: uppercase;
     padding: 0 250px;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .txt-p {
-    font-size: 16px;
-    color:rgb(39, 39, 39);
-    padding: 0 250px;
+    font-size: 25px;
+    color:rgb(17, 17, 17);
+    padding: 0 130px;
     margin-bottom: 35px;
 }
 
 .starwars-group {
     display:flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    justify-content: space-around;
 }
 
-.starwars-1 {
+.starwars-group a img{
+    max-width: 35px;
+}
+ 
+
+.starwars-1,.starwars-2,.starwars-3 {
     padding: 25px;
+}
+
+.starwars-1:hover {
+    background-image: url(../images/starwars2fondo.png);
+    font-size: 30px;
+    padding: 25px;
+    color: goldenrod;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 400px;
+}
+
+
+.starwars-2:hover {
+    background-image:url(../images/starwars1fondo.png);
+    font-size: 30px;
+    padding: 25px;
+    color: goldenrod;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 400px;
+}
+
+.starwars-3:hover {
+    background-image:url(../images/starwars3fondo.png);
+    font-size: 30px;
+    padding: 25px;
+    color: goldenrod;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 400px;
 }
 
 .starwars img {
@@ -194,6 +295,69 @@ body {
 .starwars-1 h3{
 
     margin-bottom: 15px;
+}
+
+.window{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.705)), url(../images/swA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding:33px;
+    height: 50%;
+    border-radius: 25px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    display: none;
+}
+
+.window2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.705)), url(../images/swB.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding:33px;
+    height: 50%;
+    border-radius: 25px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    display: none;
+}
+
+.window3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.705)), url(../images/swC.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding:33px;
+    height: 50%;
+    border-radius: 25px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    display: none;
+}
+
+#cerrar img {
+    height:30px;
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+
 }
 
 
@@ -223,29 +387,62 @@ body {
     font-size: 30px;
 }
 
+
+/* Estilos para el contenedor de la imagen y texto */
+.imagen-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Fondo oscuro más opaco */
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    padding: 20px;
+  }
+  
+  .imagen-container img {
+    max-width: 70%;
+    max-height: 80vh;
+  }
+  
+  .texto-lateral {
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
+  
+  /* Estilo adicional para oscurecer el fondo cuando se muestra la imagen */
+  body.dark-background {
+    overflow: hidden; /* Evita que se haga scroll en el fondo oscuro */
+  }
+
 .resumen {
     display:flex;
 }
 
 .resumen-1 {
     width: 50%;
-    padding: 75px 100px 100px 100px;
+    padding: 50px 40px 50px 40px;
     max-height: 100vh;
     text-align: end;
 
 }
 
 .resumen-2 {
-    background-image: url(../images/anewhope1.jpg);
-    background-position: center center;
+    
+    background-position:center center;
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 100vh;
     width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.219),rgba(0, 0, 0, 0.219)), url(../images/anewhope1-Z.png);
 }
 
 .resumen-3 {
-    background-image: url(../images/anewhope2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.219),rgba(0, 0, 0, 0.219)), url(../images/anewhope2-Z.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -256,24 +453,137 @@ body {
 
 .resumen-4 {
     width: 50%;
-    padding: 75px 100px 100px 100px;
+    padding: 75px 40px 50px 40px;
     max-height: 100vh;
 
 }
 
 .resumen h2 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 70px;
     line-height: 60px;
-    color:rgb(219, 157, 0);
+    color:rgb(224, 147, 31);
 
 }
 
-.resumen p {
-    font-size: 15px;
-    color:rgb(39, 39, 39);
-    margin: 25px 0 45px 0;
+.resumen p {    
+    font-size: 25px;
+    color:rgb(17, 17, 17);
+    margin: 15px 0 15px 0;
 }
+
+                        /* Estilo para ocultar el contenedor de spoilers */
+                        .spoilers-container {
+                            display: none;
+                        }
+
+                        /* Estilo para oscurecer el fondo al mostrar spoilers */
+                        body.show-spoilers .overlay {
+                            display: flex;
+                        }
+                        
+                        body.show-spoilers .spoilers-container {
+                            display: flex;
+                        }
+                        
+                        .spoilers-container {
+                            display: none;
+                            position: fixed;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: rgba(0, 0, 0, 0.9); /* Fondo oscuro más opaco */
+                            padding: 20px;
+                            border-radius: 10px;
+                            color: #fff; /* Texto blanco */
+                            z-index: 3;
+                        }
+                        
+                        .spoilers-container img {
+                            max-width: 50vw; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+                            max-height: 70vh; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+                            margin-right: 20px; /* Espaciado entre la imagen y el texto */
+                        }
+                        
+                        .spoilers-container p {
+                            font-size: 1.2em; /* Tamaño de la fuente del texto */
+                            margin: 0; /* Elimina el margen predeterminado del párrafo */
+                        }
+                        
+                        /* Estilo adicional para oscurecer el fondo cuando se muestra la imagen */
+                        body.show-spoilers {
+                            overflow: hidden; /* Evita que se haga scroll en el fondo oscuro */
+                        }
+
+
+
+
+
+
+
+/* Estilos para el contenedor de la imagen y texto */
+.imagen-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Fondo oscuro más opaco */
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    padding: 20px;
+  }
+  
+  .imagen-container img {
+    max-width: 70%;
+    max-height: 80vh;
+  }
+  
+  .texto-lateral {
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
+  
+  /* Estilo adicional para oscurecer el fondo cuando se muestra la imagen */
+  body.dark-background {
+    overflow: hidden; /* Evita que se haga scroll en el fondo oscuro */
+  }
+
+
+
+
+
+  /* Estilos para el contenedor de la imagen y texto */
+.poster-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Fondo oscuro más opaco */
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    padding: 20px;
+  }
+  
+  .poster-container img {
+    max-width: 70%;
+    max-height: 80vh;
+  }
+  
+  
+  /* Estilo adicional para oscurecer el fondo cuando se muestra la imagen */
+  body.dark-background {
+    overflow: hidden; /* Evita que se haga scroll en el fondo oscuro */
+  }
+
+               
+            
 
 .saga {
     padding: 50px 0;
@@ -394,6 +704,19 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .en1977 {
     padding: 50px 0;
     text-align: center;
@@ -437,6 +760,81 @@ body {
     padding: 0 250px;
     margin-bottom: 15px;
 }
+
+.en1977 h3:hover{
+
+    color:goldenrod;
+
+}
+
+.en1977-1:hover {
+    background-image:url(../images/1977fondob.png);
+    font-size: 18px;
+    padding: 25px;
+    color: whitesmoke;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.quiz {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)), url(../images/darthvader.jpg);
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+
+.quiz h2{
+    font-size: 55px;
+    text-align: center;
+}
+ 
+#next-button, #restart-button {
+    background-color: #3f3f3f; /* Color de fondo */
+    color: goldenrod; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno del botón */
+    font-size: 16px; /* Tamaño del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+ 
+    justify-content: center;
+}
+
+/* Cambiar color de fondo al pasar el ratón sobre el botón */
+#next-button:hover, #restart-button:hover {
+    background-color: #7c7c7c;
+}
+
+
+
+#quiz-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#options-container button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
 
 
 
@@ -535,6 +933,23 @@ footer .copyright{
 }
 /* fin estilos del footer */
 
+footer .footernav a {
+    color: whitesmoke;
+}
+
+footer .footernav a:hover {
+    color: rgb(228, 170, 25);
+}
+
+@media(max-width:1250px){
+    #georgel{
+        display: none
+    }
+
+    .texto-lateral {
+        text-align: center;
+    }
+}
 
 @media(max-width:991px){
     /* .menu {
@@ -549,7 +964,7 @@ footer .copyright{
         top: 100%;
         left: 0;
         right: 0;
-        background-color:rgb(32, 32, 32);
+        background-color:rgb(8, 8, 8);
         display: none;
 
     }
@@ -630,9 +1045,12 @@ footer .copyright{
         flex-direction: column;
     }
 
-    .saga-content {
-        display: flex;
-        flex-direction: column;
+    .saga .saga-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .container-pelicula .pelicula {
+        min-height: 130px;
 
     }
 
@@ -661,37 +1079,35 @@ footer .copyright{
     .comentarios h2 {
         padding: 0;
 
+
     }
+
+    .comentarios-1 { 
+        padding-right: 0px;
+    }
+
 
     .comentarios-content {
         flex-direction: column;
         margin-bottom: 0;
         padding: 0;
+        grid-template-columns: 1fr;
     }
 
+ 
+    .resumen-1{
+        padding-top: 40px;
+    }
+
+    .resumen-4 {
+        padding-top: 5px;
+        padding-bottom: 40px;
+    }
+    
 }
 
 
 
-
-
-.starwars {
-    padding: 30px;
-
-}
-
-.starwars-content h2 {
-    padding: 0;
-}
-
-.txt-p {
-    padding: 0;
-}
-
-.starwars-group {
-    flex-direction: column;
-    margin-bottom: 0;
-}
 
 
 
@@ -719,11 +1135,7 @@ footer .copyright{
 
 /* PAGE "TRAMA" */
 
-.header-content h2 {
-    font-size: 30px;
-    color: white;
-    opacity: 0.7;
-}
+
 
 .header-content .title-hero-2 {
     font-size:150px;

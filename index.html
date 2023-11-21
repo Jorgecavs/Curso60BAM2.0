@@ -11,7 +11,14 @@
 
 <body>
 
-
+   <!-- Overlay y alerta -->
+  <div class="overlay" id="overlay">
+    <div class="alert" id="alert">
+      <span class="gold">¡CUIDADO!</span> Esta página puede contener SPOILERS de Star Wars.
+      <br>
+      <button onclick="aceptarAlerta()">Aceptar</button>
+    </div>
+  </div>
 
     <header class="header">
         <div class="menu container">
@@ -34,7 +41,7 @@
 
         <div class="header-content container">
 
-            <h2><span class="gold">STAR WARS</span>: EPISODE IV</h2>
+            <h2><span class="gold-b">STAR WARS</span>: EPISODE IV</h2>
             <h1 class="title-hero-1">A NEW HOPE</h1>
             <p>Una odisea espacial
                <br>
@@ -47,47 +54,104 @@
     </header>
 
 
+    <script>
+        
+        window.onload = function() {
+          mostrarAlerta();
+        };
+    </script>
 
     <section class="starwars" id="starwars-c">
         <div class="starwars-content container">
+            <br>
             <h2>Star Wars</h2>
-            <p class="txt-p">Star Wars es una franquicia de medios de entreteniimiento creada por George Lucas. Comenzó con la plícula original "Star Wars" (actualmente conocida como "Star Wars: Episode IV - A New Hope") en 1977. Sin embargo, esta fantástica aventura no hubiera existido sin grandes mentes maestras.</p>
+            <p class="txt-p">Star Wars es una franquicia de medios de entretenimiento creada por George Lucas. Comenzó con la plícula original "Star Wars" (actualmente conocida como "Star Wars: Episode IV - A New Hope") en 1977. Sin embargo, esta fantástica aventura no hubiera existido sin grandes mentes maestras.</p>
             <div class="starwars-group">
                 <div class="starwars-1">
                     <img src="images/starwars2.png" alt="John Williams">
                     <h3>John Williams</h3>
-                    <p>
+                    <!-- <p>
                         Un reconocido compositor, quien creó la icónica música de la franquicia.
                         Su partitura para "Star Wars" es una parte fundamental de la identidad de la saga y
                         ha contribuido en gran medida al impacto emocional que genera en aquellos soñadores de galaxias.
-                    </p>
+                    </p> -->
+                    <a href="javascript:abrir()"><img src="images/flecha2.png"></a>
                 </div>
-                <div class="starwars-1">
+                <div class="starwars-2">
                     <img src="images/starwars1.jpg" alt="George Lucas">
                     <h3>George Lucas</h3>
-                    <p>
+                    <!-- <p>
                        Un genio del cine y la imaginación, ha dejado una huella imborrable en el corazón
                        de inumerables personas. Su visión y creatividad nos transportaron a mundos lejanos
                        y nos hicieron soñar con heroes, villanos y aventuras inolvidables.
                        Su legado es un regalo atemporal que seguira inspirando a generaciones
                        futuras a explorar galaxias lejanas y a creer en la magia del cine.
-                    </p>
+                    </p> -->
+                 
+                    <a href="javascript:abrir2()"><img src="images/flecha2.png"></a>
                 </div>
-                <div class="starwars-1">
+                <div class="starwars-3">
                     <img src="images/starwars3.jpg" alt="Ralph McQuarrie">
                     <h3>Ralph McQuarrie</h3>
-                    <p>
+                    <!-- <p>
                       Un artista conceptual cuyos diseños visuales influyeron enormemente en la estética de "Star Wars".
                       Sus ilustraciones ayudaron a dar vida a personajes, naves y mundos.
                       Sus aportes permitieron hacernos creer en la existencia de una galaxia muy, muy lejana.
-                    </p>
+                    </p> -->
+
+                    <a href="javascript:abrir3()"><img src="images/flecha2.png"></a>
                 </div>
+                
             </div>
-            <a href="#" class="btn-2">Veamos</a>
+            
+          
+
         </div>
+
+        <div class="window" id="w1">
+            <div id="cerrar">
+                <a href="javascript:cerrar()"><img src="images/cierrer.png"></a>
+            </div>
+            <h3 CLASS="gold">JOHN WILLIAMS</h3>
+            <br>
+            <p>
+                Un reconocido compositor, quien creó la icónica música de la franquicia.
+                Su partitura para "Star Wars" es una parte fundamental de la identidad de la saga y
+                ha contribuido en gran medida al impacto emocional que genera en aquellos soñadores de galaxias.
+            </p>
+        </div>
+
+         <div class="window2" id="w2">
+            <div id="cerrar">
+                <a href="javascript:cerrar2()"><img src="images/cierrer.png"></a>
+            </div>
+            <h3 CLASS="gold">GEORGE LUCAS</h3>
+            <br>
+            <p>
+                Un genio del cine y la imaginación, ha dejado una huella imborrable en el corazón
+                de inumerables personas. Su visión y creatividad nos transportaron a mundos lejanos
+                y nos hicieron soñar con heroes, villanos y aventuras inolvidables.
+                Su legado es un regalo atemporal que seguira inspirando a generaciones
+                futuras a explorar galaxias lejanas y a creer en la magia del cine.
+            </p>
+        </div>
+
+        <div class="window3" id="w3">
+            <div id="cerrar">
+                <a href="javascript:cerrar3()"><img src="images/cierrer.png"></a>
+            </div>
+            <h3 CLASS="gold">RALPH MCQUARRIE</h3>
+            <br>
+            <p>
+                Un artista conceptual cuyos diseños visuales influyeron enormemente en la estética de "Star Wars".
+                Sus ilustraciones ayudaron a dar vida a personajes, naves y mundos.
+                Sus aportes permitieron hacernos creer en la existencia de una galaxia muy, muy lejana.
+            </p>
+        </div>
+        
     </section>
 
-    <main class="georgelucas">
+    <main class="georgelucas" id="george">
         <div class="georgelucas-content container">
             <h2 class="gold">GEORGE LUCAS</h2>
             <div class="georgelucas-text">
@@ -95,25 +159,57 @@
                     <br>
                     Nada se hace sin que antes se imagine.<span class="gold">"</span></p>
                     <br>
-                <a href="" class="btn-1">Continuemos</a>
+                <a onclick="mostrarImagen()" class="btn-1">Más información</a>
             </div>
         </div>
     </main>
 
+     <!-- Elemento para la imagen y el texto (inicialmente oculto) -->
+     <div class="imagen-container" id="imagen-container">
+        <img src="images/georgelucas.jpg" alt="Star Wars Image" id="georgel">
+        <div class="texto-lateral">
+            <span class="gold">George Lucas Jr</span>. es un célebre cineasta y empresario estadounidense, nacido en la idílica localidad de Modesto, California durante el año 1944.
+            A lo largo de su carrera como cineasta, Lucas ha colaborado en numerosas superproducciones, algunas de las cuales tan relevantes como por ejemplo: “Star Wars”,
+            “American Graffitti”, “Indiana Jones” o “Jurassic Park”, unas obras con las que sin duda alcanzó el máximo reconocimiento dentro del mundo del cine.
+            Consideraba que los sueños eran fundamentales y que incluso Star Wars fue producto de un joven soñador.
+        </div>
+        <div id="cerrar">
+            <a onclick="ocultarImagen()"><img src="images/cierrer.png"></a>
+        </div>
+    </div>
+ 
 
 
-    <section class="resumen">
+    <section class="resumen" id="resumen">
         <div class="resumen-1">
-            <h2>Una nueva esperanza</h2>
+           <h2>A new hope</h2>
             <p>
                 Dirigida por George Lucas y estrenada en 1977,
                 esta película es el Episodio IV de la saga de Star Wars y el inicio a una de las franquicias más icónicas de la historia del cine.
                 La película sigue a Luke Skywalker, un joven granjero que se embarca en un viaje épico para unirse a la Rebelión contra el malvado Imperio Galáctico.
-                Junto a él, se encuentran personajes legendarios como la Princesa Leia, Han Solo y el maestro Jedi Obi-Wan Kenobi.
+                <!-- Junto a él, se encuentran personajes legendarios como la Princesa Leia, Han Solo y el maestro Jedi Obi-Wan Kenobi.
                 La película se centra en la lucha entre el bien y el mal, presentando elementos de aventura, ciencia ficción y magia,
-                y ha dejado una huella indeleble en la cultura pop, convirtiéndose en un clásico del cine de ciencia ficción.
+                y ha dejado una huella indeleble en la cultura pop, convirtiéndose en un clásico del cine de ciencia ficción. -->
             </p>
-            <a href="" class="btn-2">Sigamos</a>
+            <!-- Botón para mostrar la advertencia -->
+            <a onclick="mostrarAlertaSpoilers()" class="btn-2">Más</a>
+
+
+            
+                    <!-- Elemento para la imagen y el texto (inicialmente oculto) -->
+            <div class="imagen-container" id="spoilers-container">
+                <img src="images/resumen.jpg" alt="Star Wars Image">
+                <div class="texto-lateral">
+                    La historia sigue a <span class="gold">Luke Skywalker</span>, un granjero en el planeta desértico Tatooine,
+                    quien se une a la Rebelión contra el malvado Imperio Galáctico después de encontrar un mensaje oculto en un droide llamado R2-D2.
+                    El mensaje revela la existencia de la Princesa Leia Organa y la estación espacial masiva del Imperio,
+                    la Estrella de la Muerte, que tiene el poder de destruir planetas enteros. Junto con Han Solo, Chewbacca, Obi-Wan Kenobi
+                    y otros, Luke lidera el ataque contra la Estrella de la Muerte. Con valentía y habilidad, Luke usa la Fuerza para destruir la estación y salvar a la Rebelión.
+                </div>
+                <div id="cerrar">
+                    <a onclick="ocultarImagen2()"><img src="images/cierrer.png"></a>
+                </div>
+            </div>
         </div>
 
         <div class="resumen-2"></div>
@@ -125,16 +221,33 @@
         <div class="resumen-3"></div>
 
         <div class="resumen-4">
-            <h2>El inicio de una saga</h2>
+            <h2>La saga inicia</h2> 
             <p>
+ 
                 "Star Wars: Una Nueva Esperanza" no solo marcó el inicio de una de las sagas cinematográficas más influyentes de todos los tiempos, 
                 sino que también sentó las bases para un vasto universo de historias intergalácticas por explorar.
                 Desde 1977, Star Wars ha crecido exponencialmente, expandiéndose más allá de las películas principales para incluir 
-                series de televisión, libros, cómics y videojuegos que exploran profundamente los personajes y eventos dentro de este universo épico.
-                Los fanáticos pueden esperar una amplia gama de aventuras futuras que abarcan desde los días de la Antigua República hasta el ascenso de la Primera Orden y más allá.
-                Con un compromiso continuo con la innovación tecnológica y narrativa, la saga sigue cautivando a nuevas generaciones mientras honra su legado.
+                contenido que explora profundamente los personajes y eventos dentro de este universo épico.
+                <!-- Los fanáticos pueden esperar una amplia gama de aventuras futuras que abarcan desde los días de la Antigua República hasta el ascenso de la Primera Orden y más allá.
+                Con un compromiso continuo con la innovación tecnológica y narrativa, la saga sigue cautivando a nuevas generaciones mientras honra su legado. -->
 	        </p>
-            <a href="" class="btn-2">Avancemos</a>
+            <a onclick="mostrarAlertaSpoilers2()" class="btn-2">Más</a>
+
+             <!-- Elemento para la imagen y el texto (inicialmente oculto) -->
+            <div class="imagen-container" id="spoilers-container2">
+                <img src="images/resumen3.jpg" alt="Star Wars Image">
+                <div class="texto-lateral">
+                    Toda la historia de la trilogía original gira en torno <span clas="gold">Luke Skywalker</span> y Darth Vader. Junto a la Princesa Leia, Han Solo, Chewbacca, y los androides C-3PO y R2-D2, Luke
+                    lidera la resistencia contra el Imperio. A lo largo de la trilogía, descubre su conexión con la Fuerza, aprende el arte de los Jedi y se enfrenta a su destino.
+                    La trama también explora la relación entre Darth Vader y Luke, revelando que Vader es el padre de Luke. La Rebelión logra destruir la Estrella de la Muerte, pero enfrenta desafíos mayores.
+                    Finalmente, con la ayuda de los Ewoks, la Rebelión triunfa en la batalla de Endor, derrotando al Emperador
+                    y redimiendo a Anakin Skywalker.
+                </div>
+                <div id="cerrar">
+                    <a onclick="ocultarImagen3()"><img src="images/cierrer.png"></a>
+                </div>
+            </div>
+            
         </div>
 
     </section>
@@ -147,7 +260,7 @@
             <!-- Comienza articulo que contiene a todas las cartas de películas -->
                 <!-- apertura div contenedor -->
                 <div class="container-pelicula" id="sw1">
-                <!-- apertura div contenedor de los items -->
+                 <!-- apertura div contenedor de los items -->
                     <div class="pelicula">
                         <!-- h4 del titulo y p del subtitulo -->
                         <h4>Star Wars: La amenaza fantasma</h4>
@@ -220,12 +333,18 @@
                     </div>
                 </div>
 
+
+            
+
             <!-- fin article contenedor de las caras de películas -->
             
-        </div>
+       
     </section>
+
+    
     </div>
 
+    </div>
 
 
 
@@ -270,12 +389,31 @@
 
         </div>
 
-        <a href="#" class="btn-2">Veamos</a>
+        <br>
+        <br>
+
+        <a href="#quiz" class="btn-2">PONTE A PRUEBA</a>
 
     </section>
 
+
+    <section class="quiz" id="quiz">
+    
+    <div id="quiz-container">
+        <h2 class="gold">QUIZ</h2>
+        <br>
+        <div id="question-container"></div>
+        <div id="options-container"></div>
+        <button id="next-button">Siguiente</button>
+        <div id="result-container"></div>
+        <button id="restart-button" style="display: none;">Reiniciar</button>
+    </div>
+    </section>
+  
+
+
     <div class="form">
-    <section class="comentarios container">
+    <section class="comentarios container" id="comentarios">
         <h2>COMENTARIOS</h2>
         <div class="comentarios-content">
             
@@ -355,7 +493,7 @@
         <div class="footernav">
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
-               <a href="#">Contacto</a>
+            <a href="#">Contacto</a>
         </div>
         <!-- Fin del nav del footer -->
 
@@ -368,8 +506,7 @@
     </footer>
     <!-- Fin del footer -->
 
-
-
+    <script src="js/main.js"></script>
 
 
 
